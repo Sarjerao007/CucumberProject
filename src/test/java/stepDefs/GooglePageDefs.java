@@ -5,6 +5,7 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
 
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -30,9 +31,24 @@ public class GooglePageDefs {
 	@Then("Should Displayed Java Search Page")
 	public void Should_Displayed_Java_Search_Page()
 	{
+		String subtitle=driver.getTitle();
+		Assert.assertEquals(subtitle, "Java Tutorial - Google Search");
+	}
+	
+	
+	@When("I Search For Selenium Tutorial")
+	public void I_Search_For_Selenium_Tutorial()
+	{
+		WebElement webelement=driver.findElement(By.id("APjFqb"));
+		webelement.sendKeys("Selenium Tutorial");
+		webelement.sendKeys(Keys.ENTER);
+	
+	}
+	@Then("Should Displayed Selenium Search Page")
+	public void Should_Displayed_Selenium_Search_Page()
+	{
 		String title=driver.getTitle();
-		System.out.println("The Page Title is  "+title);
-		System.out.println("The Page Title is  "+driver.getCurrentUrl());
+		Assert.assertEquals(title, "Selenium Tutorial - Google Search");
 	}
 
 }
