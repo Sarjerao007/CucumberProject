@@ -12,9 +12,10 @@ import io.cucumber.testng.CucumberOptions;
 		monochrome=true,
 		plugin= {"pretty",
 				"html:target/reports/htmlReports.html",
-				"usage:target/reports/UsageReports",
-				"json:target/reports/jsonReports.json",
-				"junit:target/reports/JunitReports.junit"
+//				"usage:target/reports/UsageReports",
+//				"json:target/reports/jsonReports.json",
+//				"junit:target/reports/JunitReports.junit"
+				"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"
 				
 		}
 		)

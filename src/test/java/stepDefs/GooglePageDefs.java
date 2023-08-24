@@ -2,11 +2,15 @@ package stepDefs;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 
+import io.cucumber.java.After;
+import io.cucumber.java.Scenario;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -48,7 +52,16 @@ public class GooglePageDefs {
 	public void Should_Displayed_Selenium_Search_Page()
 	{
 		String title=driver.getTitle();
-		Assert.assertEquals(title, "Selenium Tutorial - Google Search");
+		Assert.assertEquals(title, "Selenium1 Tutorial - Google Search");
+	}
+	
+	@After
+	public void attachScreenhshot(Scenario scenario) {
+		if(scenario.isFailed()){
+			TakesScreenshot screen=(TakesScreenshot)driver;
+			byte[] src=screen.getScreenshotAs(OutputType.BYTES);
+			scenario.attach(src, "image/png", "Scenario Screenshot");
+		}
 	}
 
 }
