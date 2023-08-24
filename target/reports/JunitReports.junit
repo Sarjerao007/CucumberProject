@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="19.063" tests="3" skipped="0" failures="0" errors="0">
-<testcase classname="Google Page Search Function" name="Search Java Tutorial" time="7.331">
+<testsuite name="Cucumber" time="17.969" tests="3" skipped="0" failures="0" errors="0">
+<testcase classname="Google Page Search Function" name="Search Java Tutorial" time="6.572">
 <system-out><![CDATA[
 Given User is On Google Page................................................passed
 When I Search For Java Tutorial.............................................passed
 Then Should Displayed Java Search Page......................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Google Page Search Function" name="Search Selenium Tutorial" time="5.977">
+<testcase classname="Google Page Search Function" name="Search Selenium Tutorial" time="6.163">
 <system-out><![CDATA[
 Given User is On Google Page................................................passed
 When I Search For Selenium Tutorial.........................................passed
 Then Should Displayed Selenium Search Page..................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Sending Email" name="Send Emails to User" time="5.492">
+<testcase classname="Sending Email" name="Send Emails to User" time="4.964">
 <system-out><![CDATA[
 Given User must launch the application......................................passed
 When user should send email.................................................passed
