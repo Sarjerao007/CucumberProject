@@ -8,9 +8,15 @@ import io.cucumber.testng.CucumberOptions;
 @CucumberOptions(
 		features="src//test//resources//features//",
 		glue={"stepDefs"},
-		dryRun=true,
+		dryRun=false,
 		monochrome=true,
-		plugin= {"pretty"}
+		plugin= {"pretty",
+				"html:target/reports/htmlReports.html",
+				"usage:target/reports/UsageReports",
+				"json:target/reports/jsonReports.json",
+				"junit:target/reports/JunitReports.junit"
+				
+		}
 		)
 public class MyTestRunner extends AbstractTestNGCucumberTests {
   
