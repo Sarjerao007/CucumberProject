@@ -14,7 +14,8 @@ import io.cucumber.testng.CucumberOptions;
 //		tags="@SmokeTest and @RegressionTest"
 //		tags="@PhaseTwo"
 //		tags="@PhaseOne"
-		tags="@PhaseOne and @SmokeTest"
+//		tags="@PhaseOne and @SmokeTest"
+		tags="@PhaseOne and not @SmokeTest"
 		)
 public class TaggedRunner extends AbstractTestNGCucumberTests {
   
