@@ -1,3 +1,4 @@
+@PhaseTwo
 Feature: Contacts Management
 
 @SmokeTest

@@ -11,9 +11,11 @@ import io.cucumber.testng.CucumberOptions;
 //		tags="@SmokeTest"
 //		tags="@RegressionTest"
 //		tags="@SmokeTest or @RegressionTest"
-		tags="@SmokeTest and @RegressionTest"
-		
+//		tags="@SmokeTest and @RegressionTest"
+//		tags="@PhaseTwo"
+//		tags="@PhaseOne"
+		tags="@PhaseOne and @SmokeTest"
 		)
-public class CRUDRunner extends AbstractTestNGCucumberTests {
+public class TaggedRunner extends AbstractTestNGCucumberTests {
   
 }
