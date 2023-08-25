@@ -1,9 +1,9 @@
 Feature: Login Function
 
-#Scenario: Valid Login
-#Given User is on Login
-#When User Enters credentials
-#Then User Should Be Navigated to Homepage
+Scenario: Valid Login
+Given User is on Login
+When User Enters credentials
+Then User Should Be Navigated to Homepage
 
 #Scenario: Parameterization Valid Login
 #Given User is on Login
@@ -35,11 +35,11 @@ Feature: Login Function
 #	| tomsmith | SuperSecretPassword! |
 #Then User Should Be Navigated to Homepage
 
-#Incomplet Need to Implement
-Scenario: DataTable as a Map Valid Login more than one set of data
-Given User is on Login
-When User Enters credentialssss
-	| Username | Password |
-	| tomsmith | SuperSecretPassword! |
-	| User1 | Pass |
-Then User Should Be Navigated to Homepage
+#Incomplete Need to Implement
+#Scenario: DataTable as a Map Valid Login more than one set of data
+#Given User is on Login
+#When User Enters credentialssss
+#	| Username | Password |
+#	| tomsmith | SuperSecretPassword! |
+#	| User1 | Pass |
+#Then User Should Be Navigated to Homepage

@@ -1,27 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-08-25T05:55:34 GMT" name="Default suite" finished-at="2023-08-25T05:55:42 GMT" duration-ms="7905">
+  <suite started-at="2023-08-25T06:23:54 GMT" name="Default suite" finished-at="2023-08-25T06:24:09 GMT" duration-ms="15133">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.MyTestRunner@712625fd]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.ParallelExecution@712625fd]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2023-08-25T05:55:34 GMT" name="Default test" finished-at="2023-08-25T05:55:42 GMT" duration-ms="7905">
-      <class name="runners.MyTestRunner">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runners.MyTestRunner@712625fd]" started-at="2023-08-25T05:55:34 GMT" name="setUpClass" finished-at="2023-08-25T05:55:35 GMT" duration-ms="816" status="PASS">
+    <test started-at="2023-08-25T06:23:54 GMT" name="Default test" finished-at="2023-08-25T06:24:09 GMT" duration-ms="15133">
+      <class name="runners.ParallelExecution">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runners.ParallelExecution@712625fd]" started-at="2023-08-25T06:23:54 GMT" name="setUpClass" finished-at="2023-08-25T06:23:55 GMT" duration-ms="811" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@3e33b52e]]>
+                <![CDATA[org.testng.TestRunner@1b32cd16]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.MyTestRunner@712625fd]" started-at="2023-08-25T05:55:35 GMT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-08-25T05:55:41 GMT" duration-ms="5792" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.ParallelExecution@712625fd]" started-at="2023-08-25T06:23:55 GMT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-08-25T06:24:08 GMT" duration-ms="12987" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Search Java Tutorial"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Google Page Search Function"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.ParallelExecution@712625fd]" started-at="2023-08-25T06:23:55 GMT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-08-25T06:24:04 GMT" duration-ms="9342" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -37,11 +53,43 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runners.MyTestRunner@712625fd]" started-at="2023-08-25T05:55:41 GMT" name="tearDownClass" finished-at="2023-08-25T05:55:42 GMT" duration-ms="1238" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.ParallelExecution@712625fd]" started-at="2023-08-25T06:23:55 GMT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-08-25T06:24:08 GMT" duration-ms="12981" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Search Selenium Tutorial"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Google Page Search Function"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.ParallelExecution@712625fd]" started-at="2023-08-25T06:23:55 GMT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-08-25T06:24:06 GMT" duration-ms="11399" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Send Emails to User"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Sending Email"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runners.ParallelExecution@712625fd]" started-at="2023-08-25T06:24:08 GMT" name="tearDownClass" finished-at="2023-08-25T06:24:09 GMT" duration-ms="1273" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
-      </class> <!-- runners.MyTestRunner -->
+      </class> <!-- runners.ParallelExecution -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
