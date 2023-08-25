@@ -72,7 +72,7 @@ public class UserStepDefs {
 	@When("User Enters credentialssss")
 	public void user_enters_credentialssss(DataTable datatable) {
 		List<Map<String,String>> data=datatable.asMaps();
-		data.size();
+		//data.size();
 		String strUser=data.get(0).get("Username");
 		String strPass= data.get(0).get("Password");
 	driver.findElement(By.xpath("//input[@name='username']")).sendKeys(strUser);

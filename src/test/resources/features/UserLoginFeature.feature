@@ -35,10 +35,11 @@ Feature: Login Function
 #	| tomsmith | SuperSecretPassword! |
 #Then User Should Be Navigated to Homepage
 
-
+#Incomplet Need to Implement
 Scenario: DataTable as a Map Valid Login more than one set of data
 Given User is on Login
-When User Enters credentialsss
+When User Enters credentialssss
 	| Username | Password |
 	| tomsmith | SuperSecretPassword! |
+	| User1 | Pass |
 Then User Should Be Navigated to Homepage
