@@ -15,8 +15,8 @@ import io.cucumber.testng.CucumberOptions;
 //				"usage:target/reports/UsageReports",
 //				"json:target/reports/jsonReports.json",
 //				"junit:target/reports/JunitReports.junit"
-				"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"
-				
+//				"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"
+				"rerun:target/failedScenario.txt"
 		}
 		)
 public class MyTestRunner extends AbstractTestNGCucumberTests {

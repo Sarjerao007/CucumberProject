@@ -52,7 +52,7 @@ public class GooglePageDefs {
 	public void Should_Displayed_Selenium_Search_Page()
 	{
 		String title=driver.getTitle();
-		Assert.assertEquals(title, "Selenium1 Tutorial - Google Search");
+		Assert.assertEquals(title, "Selenium Tutorial - Google Search");
 	}
 	
 	@After
