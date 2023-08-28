@@ -1,10 +1,36 @@
 package stepDefs;
 
+import io.cucumber.java.AfterAll;
+import io.cucumber.java.Before;
+import io.cucumber.java.BeforeAll;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.When;
 
 public class CrudPageStepDefs {
+////Before Hook Before all Test
+	@BeforeAll
+	public static void intializeApplucation() {
+		System.out.println("Initialize Application");
+	}
+ //After Hook will perform after all Test
+	@AfterAll
+	public static void tearDown() {
+		System.out.println("Application Shutdown");
+	}
+//	@Before("@RegressionTest")
+//	public static void intializeApplucationinBeforeMethod() {
+//		System.out.println("Initialize Application in BeforeMethod");	}
 	
+		
+	@Before(order=1)
+	public void readFromPropertyFile() {
+	    System.out.println("readFroMPropertyFile");}
+	@Before(order=2)
+	public void readFromDB() {
+	    System.out.println("readFromDB");}
+	@Before(order=3)
+	public void readFromBrowser() {
+	    System.out.println("readFromBrowser");}
 	
 	@Given("User is on CRM Home Page")
 	public void user_is_on_crm_home_page() {
